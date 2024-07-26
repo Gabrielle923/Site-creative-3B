@@ -1,141 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <img src="unlock.svg" alt="cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+        </div>
+        <div class="conteudo-senha">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha" readonly>
+        </div>
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>               
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="minusculo" type="checkbox" class="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="numero" type="checkbox" class="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="simbolo" type="checkbox" class="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraca"></div>
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                    <p class="entropia"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body> 
 </html>
-<body>
-    <img src="" alt="cadeado fechado">
-    <h2 class="titulo-principal">Gerador de senhas</h2>
-    <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
-</body>
-<img src="unlock.svg" alt="cadeado fechado">
-<link rel="stylesheet" href="style.css">
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senha</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img src="unlock.svg" alt="cadeado fechado">
-    <h2 class="titulo-principal">Gerador de senhas</h2>
-    <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
-</body>
-</html>
-body{
-    color: white;
-    background-color: #00162E;
-}
-:root{
-    --branco: white;
-    --cor-de-fundo: #00162E;
-}
-
-body{
-    color: var(--branco);
-    background-color: var(--cor-de-fundo);
-}
-:root{
-    --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
-:root{
-    --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
-    --roboto: 'Roboto', sans-serif;
-    --roboto-mono: 'Roboto Mono', monospace;
-}
-body{
-    color: var(--branco);
-    background-color: var(--cor-de-fundo);
-    font-family: var(--roboto);
-}
-.titulo-principal{
-    font-family: var(--roboto-mono);
-    font-size: 32px;
-}
-.titulo-secundario{
-    font-size: 24px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
-
-:root{
-    --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
-    --roboto: 'Roboto', sans-serif;
-    --roboto-mono: 'Roboto Mono', monospace;
-}
-
-body{
-    color: var(--branco);
-    background-color: var(--cor-de-fundo);
-    font-family: var(--roboto);
-}
-
-.titulo-principal{
-    font-family: var(--roboto-mono);
-    font-size: 32px;
-}
-
-.titulo-secundario{
-    font-size: 24px;
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-<html lang="pt-BR">
-    <title>Gerador de senhas</title>
-    <title>Gerador de senhas</title>
-    <link rel="stylesheet" href="style.css">
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gerador de senhas</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    
-    </body>
-    </html>
-    <body>
-        <img src="" alt="cadeado fechado">
-    </body>
-    <body>
-        <img src="" alt="cadeado fechado">
-        <h2 class="titulo-principal">Gerador de senhas</h2>
-    </body>
-    <body>
-        <img src="" alt="cadeado fechado">
-        <h2 class="titulo-principal">Gerador de senhas</h2>
-        <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
-    </body>
-    <img src="unlock.svg" alt="cadeado fechado">
-    
